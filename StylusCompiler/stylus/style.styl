@@ -1,9 +1,7 @@
-@import url('http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600');
-@import url('http://fonts.googleapis.com/earlyaccess/notokufiarabic.css');
-
 boldOrange = #FF835B
 
 html
+	color #323232
 	background-color white
 
 body
@@ -15,6 +13,7 @@ body
 .arabic
 	font-family Noto Kufi Arabic
 	&.left
+		line-height 2.2em
 		text-align right
 		font-size 0.8em
 		padding-right 8px
@@ -25,6 +24,7 @@ body
 .english
 	font-family Source Sans Pro
 	&.right
+		line-height 1.6em
 		font-size 1em
 		padding-left 8px
 	b
@@ -38,7 +38,7 @@ body
 	text-align center
 
 .image-whole-collumn
-	width 70%
+	width 60%
 
 .centered-titles
 	text-align center
@@ -70,6 +70,31 @@ body
 
 .center-image
 	text-align center
+
+
+/*Testimonials*/
+.testimonial-face-item
+	padding 5px
+	img
+		width 100%
+/*Starting testimonial face*/
+.testimonial-description
+	text-align center
+
+.testimonial-face
+	margin 0 auto
+
+#ling-testimonial
+	.testimonial-face
+		background: url("../images/testimonials/Brett.png"); 
+		background-size: cover
+		background-position: center
+		background-repeat: no-repeat
+		height: 180px
+		width: 180px
+		overflow: hidden
+
+
 
 @media screen and (max-width: 400px)
 	.half
