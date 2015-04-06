@@ -80,6 +80,8 @@ body
 	padding 5px
 	img
 		width 100%
+	&.inactive
+		opacity 0.4
 /*Starting testimonial face*/
 .testimonial-description
 	text-align center
@@ -105,9 +107,27 @@ body
 			color #DDDDDD
 		.left-quote
 			line-height 0.5em
+			-webkit-animation: whaleAni 5s linear 0s infinite alternate-reverse; /* Chrome, Safari, Opera */
 		.right-quote
 			line-height 0.2em
 			right 0px
+			-webkit-animation: whaleAni2 5s linear 0s infinite alternate-reverse; /* Chrome, Safari, Opera */
+
+@-webkit-keyframes whaleAni {
+    0%   {line-height:0.4em; left: -10px}
+    25% {line-height:0.5em;}
+    50% {line-height:0.6em; left: 0px }
+    75% {line-height:0.5em;}
+    100% {line-height:0.4em; left: 10px}
+}
+
+@-webkit-keyframes whaleAni2 {
+    0%   {line-height:0.1em; right: -10px}
+    25% {line-height:0.2em;}
+    50% {line-height:0.3em; right: 0px }
+    75% {line-height:0.2em;}
+    100% {line-height:0.1em; right: 10px}
+}
 
 
 .testimonial-face
@@ -141,3 +161,6 @@ body
 		padding-top 10px
 	.flex-container
 		flex-direction column
+	/*testimonials*/
+	.testimonial-container
+		flex-direction row
