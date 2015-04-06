@@ -73,6 +73,9 @@ body
 
 
 /*Testimonials*/
+.testimonial-container
+	margin-top 50px
+
 .testimonial-face-item
 	padding 5px
 	img
@@ -80,6 +83,32 @@ body
 /*Starting testimonial face*/
 .testimonial-description
 	text-align center
+	.name-h1
+		&.english
+			font-weight 200
+			font-size 3.2em
+			margin-bottom -15px
+		&.arabic
+			font-size 1.8em
+	.testimonial-quote
+		position relative
+		.english
+			font-size 1.4em
+			font-weight 200
+			line-height 1.5em
+		.arabic
+			font-size 1.2em
+		.quote
+			position absolute
+			font-size 12em
+			z-index -10
+			color #DDDDDD
+		.left-quote
+			line-height 0.5em
+		.right-quote
+			line-height 0.2em
+			right 0px
+
 
 .testimonial-face
 	margin 0 auto
