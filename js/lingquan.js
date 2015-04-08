@@ -1,7 +1,5 @@
 $(document).ready(function(){
     $(".testimonial-face-item").click(function(){
-        console.log("testOutput")
-        console.log(this.dataset.nameeng);
         nameEnglish = this.dataset.nameeng;
         nameArabic = this.dataset.namearb;
         personTitle = this.dataset.title;
@@ -21,11 +19,12 @@ $(document).ready(function(){
         containerDiv.find(".nameEng").text(nameEnglish)
         containerDiv.find(".nameArb").text(nameArabic)
         containerDiv.find(".testimonial-title").text(personTitle)
-        containerDiv.find(".testimonialEng").text(descriptionEng)
-        containerDiv.find(".testimonialArb").text(descriptionArb)
+        containerDiv.find(".testimonialEng").html(descriptionEng)
+        containerDiv.find(".testimonialArb").html(descriptionArb)
 
 
     });
+    //Scrolling to anchors
     $('a[href^="#"]').on('click', function(event) {
       var target = $( $(this).attr('href') );
       if( target.length ) {
