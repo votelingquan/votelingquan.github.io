@@ -3,7 +3,8 @@
   <head>
     <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/earlyaccess/notokufiarabic.css' rel='stylesheet' type='text/css'>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+    <script src="js/jquery-2.1.3.min-2.js"></script>
     <meta http-equiv='Content-type' content='text/html; charset=utf-8'>
     <title>Ling and Quan for Student Government</title>
     <meta name="viewport" content="width=device-width" />
@@ -150,10 +151,10 @@
     <div id="ling-testimonial" class="testimonial-description">
       <div class="testimonial-face"></div>
       <div class="testimonaial-name">
-        <div class="english name-h1">
+        <div class="nameEng english name-h1">
           Brett Bolton
         </div>
-        <div class="arabic name-h1" DIR="RTL">
+        <div class="nameArb arabic name-h1" DIR="RTL">
           بريت بولتون
         </div>
       </div>
@@ -162,30 +163,60 @@
       </div>
       <div class="testimonial-quote">
         <div class="quote left-quote">&#8220</div>
-        <div class="english">
+        <div class="testimonialEng english">
           <p>From the day I quoted Ling's application to NYUAD in my speech to his incoming freshman class, I have had full faith in his ability and an expectation of him to empower his fellow students and ensure that the student body has a powerful voice in the ongoings of university governance.</p>
         </div>
-        <div class="arabic" DIR="RTL">
+        <div class="testimonialArb arabic" DIR="RTL">
             <p>من اليوم الذي اقتبست به معاملة تقديم لينغ لجامعة نيويورك أبوظبي في خطابي لصفه من طلاب السنة الأولى، لقد كان لدي الإيمان الكامل في قدرته وأتوقع منه تمكين زملائه الطلاب والتأكد من أن الهيئة الطلابية لديها صوتا القوي في اتخاذ قرارات تخص الحياة الجامعية.</p>
         </div>
         <div class="quote right-quote">&#8221</div>
     </div>
 
 
-    <div class="flex-container testimonial-container">
-      <div data-name="brett" class="flex-item testimonial-face-item">
+    <div class="flex-container testimonial-container" data-parentgroup="ling-testimonial">
+      <div class="flex-item testimonial-face-item"
+        data-nameEng="Brett Bolton"
+        data-nameArb="بريت بولتون"
+        data-title="Class of 2014, Second StuGov President"
+        data-descEng="From the day I quoted Ling's application to NYUAD in my speech to his incoming freshman class, I have had full faith in his ability and an expectation of him to empower his fellow students and ensure that the student body has a powerful voice in the ongoings of university governance."
+        data-descArb="من اليوم الذي اقتبست به معاملة تقديم لينغ لجامعة نيويورك أبوظبي في خطابي لصفه من طلاب السنة الأولى، لقد كان لدي الإيمان الكامل في قدرته وأتوقع منه تمكين زملائه الطلاب والتأكد من أن الهيئة الطلابية لديها صوتا القوي في اتخاذ قرارات تخص الحياة الجامعية."
+        data-img="images/testimonials/Brett.png">
         <img src="images/testimonials/Brett.png" />
       </div>
-      <div data-name="koh" class="flex-item testimonial-face-item inactive">
+      <div class="flex-item testimonial-face-item inactive"
+        data-nameEng="Koh Terai"
+        data-nameArb="كوه تيراي"
+        data-title="Class of 2017"
+        data-descEng="I’ve worked with Ling on countless projects.  This man knows how to run a team, execute, deliver, and most importantly has great taste.  He’s got the passion and diligence to create something beautiful.  Now its our responsibility to enable him."
+        data-descArb="لقد عملت مع لينغ على مشاريع لا تعد ولا تحصى. هذا الرجل يعرف كيفية العمل مع فريق وقيادته تنفيذاً وتقديماً، والأهم من ذلك فهو  لديه ذوق كبير. لديه العاطفة والاجتهاد الكافي لخلق شيء جميل. مسؤوليتنا  الآن هي تمكينه."
+        data-img="images/testimonials/Koh.png">
         <img src="images/testimonials/Koh.png" />
       </div>
-      <div data-name="mandy" class="flex-item testimonial-face-item inactive">
+      <div class="flex-item testimonial-face-item inactive"
+        data-nameEng="Mandy Tan"
+        data-nameArb="ماندي تان"
+        data-title="Class of 2015, Member of Second StuGov"
+        data-descEng="We may all be looking through the same prism, but Ling has an extraordinary talent to see to lights that so easily slip through our eyes. He is diligent and relentless in crafting value from these lights to create a stronger community. These attributes would add an irreplaceable twist on what Student Government stands for and can achieve."
+        data-descArb="قد نكون جميعا ننظر من خلال نفس العدسة، ولكن لينغ لديه موهبة غير عادية ليرى الأضواء التي من الممكن أن تنزلق بسهولة من خلال عدساتنا. هو دؤوب وحثيث في صياغة القيم من هذه الأضواء لخلق مجتمع أقوى. ومن شأن هذه الصفات الإضافة إلى تطور لا يمكن الاستغناء عنه على ما يقف عليه مجلس الطلبة ويستطيع تحقيقه."
+        data-img="images/testimonials/Mandy.png">
         <img src="images/testimonials/Mandy.png" />
       </div>
-      <div data-name="nino" class="flex-item testimonial-face-item inactive">
+      <div class="flex-item testimonial-face-item inactive"
+        data-nameEng="Nino Cricco"
+        data-nameArb="نينو كريكو"
+        data-title="Class of 2016"
+        data-descEng="I've worked with Ling in Student Government before. Since freshman year, he has worked tirelessly in efforts to improve our community. Ling is someone we need in student government- a committed student advocate."
+        data-descArb="لقد عملت مع لينغ في مجلس الطلبة من قبل. منذ أول سنة، عمل لينغ دون كلل في الجهود العظيمة إلى تحسين مجتمعنا. لينغ هو شخص نحتاجه في مجلس الطلبة، انه ملتزم جداً."
+        data-img="images/testimonials/Nino.png">
         <img src="images/testimonials/Nino.png" />
       </div>
-      <div data-name="sebastian" class="flex-item testimonial-face-item inactive">
+      <div class="flex-item testimonial-face-item inactive"
+        data-nameEng="Sebastian Grube"
+        data-nameArb="سيباستيان جروبي"
+        data-title="Class of 2018"
+        data-descEng="If you look for someone who does not scare away from approaching problems and who works towards fulfilling solutions efficently, then Ling is the right Person for President."
+        data-descArb="إذا كنت تبحث عن شخص لا يخاف من مشاكل تقترب اليه ويعمل نحو تحقيق الحلول  بطريقة فعالة، فلينغ هو الشخص المناسب لمنصب الرئيس."
+        data-img="images/testimonials/Sebastian.png">
         <img src="images/testimonials/Sebastian.png" />
       </div>
     </div>
