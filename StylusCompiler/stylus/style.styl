@@ -145,7 +145,7 @@ body
 	margin 0 auto
 
 #ling-testimonial
-	padding-top 50px
+	padding-top 30px
 	.testimonial-face
 		background: url("../images/testimonials/Brett.png"); 
 		background-size: cover
@@ -156,6 +156,8 @@ body
 		overflow: hidden
 
 @media screen and (max-width: 400px)
+	body
+		padding 5px
 	.half
 		width 100%
 		display block
@@ -171,10 +173,14 @@ body
 		padding-top 10px
 	.flex-container
 		flex-direction column
+
 	/*testimonials*/
 	.testimonial-container
 		flex-direction row
+		.testimonial-face-item
+			padding 3px
 	.left-quote
 		-webkit-animation none
 	.right-quote
 		-webkit-animation none
+	
