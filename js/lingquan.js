@@ -8,7 +8,12 @@ $(document).ready(function(){
         descriptionEng = this.dataset.desceng;
         descriptionArb = this.dataset.descarb;
         faceImage = 'url("' + this.dataset.img + '")';
-        console.log(faceImage)
+
+        //Change the opacity of the face thumbails
+        activeFace = $(this).parent().find(".active")
+        activeFace.removeClass("active").addClass("inactive")
+        $(this).removeClass("inactive").addClass("active")
+
         //Need to know whether to change description for ling or quans testimonial section
         containerDiv = $(document.getElementById($(this).parent().data('parentgroup')))
 
@@ -20,5 +25,14 @@ $(document).ready(function(){
         containerDiv.find(".testimonialArb").text(descriptionArb)
 
 
+    });
+    $('a[href^="#"]').on('click', function(event) {
+      var target = $( $(this).attr('href') );
+      if( target.length ) {
+          event.preventDefault();
+          $('html, body').animate({
+              scrollTop: target.offset().top
+          }, 1000);
+      }
     });
 });
