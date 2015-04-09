@@ -1,4 +1,8 @@
 boldOrange = #FF835B
+brightOrange = #FDA634
+darkestGray = #6E6E6E
+darkerGray = #ddd
+lightestGray = #ECECEC
 
 html
 	color #323232
@@ -71,6 +75,33 @@ body
 .center-image
 	text-align center
 
+/*Section Header*/
+.sectionHeader
+	position relative
+	text-align center
+	color darkestGray
+	.fa
+		font-size 8em
+		color lightestGray
+		position absolute
+		top 0
+		right 0
+		left 0
+		z-index -1
+	.sectionNameEng
+		font-size 2.7em
+		padding-top 15px
+	.sectionNameArb
+		font-size 2.5em
+		margin-top -20px
+
+/*separating bar*/
+.separator
+	background-color brightOrange
+	color white
+	padding 5px
+	text-align center
+	margin 50px 0px
 
 /*Testimonials*/
 .testimonial-container
