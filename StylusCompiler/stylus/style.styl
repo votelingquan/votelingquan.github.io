@@ -20,7 +20,6 @@ body
 		line-height 2.2em
 		text-align right
 		font-size 0.8em
-		padding-right 8px
 	b
 		font-weight 600
 		color boldOrange
@@ -30,7 +29,6 @@ body
 	&.right
 		line-height 1.6em
 		font-size 1em
-		padding-left 8px
 	b
 		font-weight 600
 		color boldOrange
@@ -43,18 +41,20 @@ body
 
 .image-whole-collumn
 	width 60%
+	margin auto
 
 .centered-titles
 	text-align center
 
 .name-h1
 	font-weight 300
-	font-size 2em
+	font-size 2.5em
 	&.arabic
-		font-size 1.2em
+		font-size 1.7em
+		line-height 1.4em
 
-.vertal-center
-	padding-top 75px
+.vertical-center
+	padding-top 10px
 
 
 .flex-container
@@ -65,6 +65,7 @@ body
 	display: flex;
 
 .flex-item
+	padding 8px
 	flex 1
 	zoom: 1
 	letter-spacing: normal;
@@ -73,13 +74,16 @@ body
 	text-rendering: auto;
 
 .center-image
-	text-align center
+	width 400px
+	margin auto
 
 /*Section Header*/
 .sectionHeader
 	position relative
 	text-align center
 	color darkestGray
+	margin-top 100px
+	margin-bottom 50px
 	.fa
 		font-size 8em
 		color lightestGray
@@ -195,12 +199,18 @@ body
 		background-repeat: no-repeat
 		height: 180px
 		width: 180px
-		overflow: hidden
 
 
 @media screen and (min-width: 400px) and (max-width: 600px)
+	.flex-item
+		padding 0px
+	body
+		padding 8px
+	.flex-container
+		flex-direction column-reverse
 	.testimonial-container
 		padding 10px
+		flex-direction row
 		.testimonial-face-item
 			padding 5px
 
@@ -214,14 +224,13 @@ body
 		&.left
 			font-size 1em
 			line-height 1.8em
-	.right
-		padding 0 8px
-	.left
-		padding 0 8px
-	.vertal-center
+	.vertical-center
 		padding-top 10px
 	.flex-container
-		flex-direction column
+		flex-direction column-reverse
+
+	.center-image
+		width auto
 
 	/*testimonials*/
 	.testimonial-container
