@@ -15,7 +15,6 @@ $(document).ready(function(){
         //Need to know whether to change description for ling or quans testimonial section
         containerDiv = $(document.getElementById($(this).parent().data('parentgroup')))
 
-        console.log(containerDiv)
         containerDiv.find(".testimonial-face").css({"background": faceImage, "background-size": "cover"})
         containerDiv.find(".nameEng").text(nameEnglish)
         containerDiv.find(".nameArb").text(nameArabic)
